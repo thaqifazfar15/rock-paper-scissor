@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1>Rock Paper Scissor!</h1>
-    <h4>But, it is in console...</h4>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  </style>
+  <body>
+    <h1 class="title">ROCK PAPER SCISSOR</h1>
+    <h2 class="title">First to 5 Win!</h4>
+    <div class="game">
+      <div class="choices">
+        <div class="human">
+          <div class="options">
+            <div class="option rock">Rock</div>
+            <div class="option paper">Paper</div>
+            <div class="option scissor">Scissor</div>
+            <div id="human-score" class="score">0</div>
+          </div>
+        </div>
+        <h2 class="vs">VS</h2>
+        <div class="computer">
+          <div class="invinsible-option"></div>
+          <div class="option">Computer</div>
+          <div id="computer-choice" class="invinsible-option"></div>
+          <div id="computer-score" class="score">0</div>
+        </div>
+      </div>
+    </div>
+    <div id="display-winner">
+      <div id="isWinner" class="alert-winner"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

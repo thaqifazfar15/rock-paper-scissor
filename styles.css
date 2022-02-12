@@ -1,0 +1,74 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------- Game Section --------------*/
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em;
+  margin-bottom: 2em;
+  gap: 9em;
+}
+
+.option {
+  border: 2px solid black;
+  border-radius: 0.4em;
+  padding: 2.4em;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.invinsible-option {
+  border: 2px solid white;
+  padding: 2.4em;
+  margin: 2em 0;
+  text-align: center;
+}
+/*----x----- Game Section -------x------*/
+
+/*---------- Score --------------*/
+
+.score {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert-winner {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.retry-again {
+  font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  height: 3em;
+  width: 8em;
+  padding: 0.3em 0.7em;
+  font-size: 1.1em;
+  border: 2px solid black;
+  border-radius: 2.4em;
+  background-color: white;
+}
+
+/*----x----- Score -------x------*/
