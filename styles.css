@@ -21,7 +21,7 @@ html {
   align-items: center;
   margin-top: 6em;
   margin-bottom: 2em;
-  gap: 9em;
+  gap: 7em;
 }
 
 .option {
@@ -30,6 +30,17 @@ html {
   padding: 2.4em;
   margin: 2em 0;
   text-align: center;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 670px) {
+  .choices {
+    gap: 2em;
+  }
 }
 
 .invinsible-option {
@@ -37,10 +48,31 @@ html {
   padding: 2.4em;
   margin: 2em 0;
   text-align: center;
+  width: 38px;
+  height: 38px;
 }
+
+.clicking {
+  transform: scale(1.1);
+  border-color: #233b5f;
+  box-shadow: 0 0 1rem #233b5f;
+}
+
 /*----x----- Game Section -------x------*/
 
 /*---------- Score --------------*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outcome {
+  font-size: 1.1em;
+  text-align: center;
+  width: 14em;
+}
 
 .score {
   font-size: 2em;
@@ -66,9 +98,24 @@ html {
   width: 8em;
   padding: 0.3em 0.7em;
   font-size: 1.1em;
-  border: 2px solid black;
+  font-weight: bold;
+  border: 2px solid red;
   border-radius: 2.4em;
-  background-color: white;
+  background-color: red;
+  color: white;
+}
+
+.retry-again:hover {
+  background-color: rgb(255, 234, 234);
+  color: black;
 }
 
 /*----x----- Score -------x------*/
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 2.5em;
+  text-align: center;
+}
